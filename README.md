@@ -1,5 +1,6 @@
 # ARA-PROJE
 YTU CE ARA PROJE- TWİTTER'DA DUYGUDURUM ANALİZİ
+
 Projenin konusu ’Twitter’da duygudurum analizi’ dir.Twitter metinleri olumlu,
 olumsuz veya nötr sınıflarından biriyle doğru bir ¸sekilde etiketlemektir.
 
