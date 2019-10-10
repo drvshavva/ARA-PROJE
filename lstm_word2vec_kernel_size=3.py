@@ -67,14 +67,6 @@ for epoch in range(30):
 model_sg = Word2Vec(sg=1, size=100, negative=5, window=2, min_count=2, workers=cores, alpha=0.065, min_alpha=0.065)
 model_sg.build_vocab([x.words for x in tqdm(all_x_w2v)])
 
-"""%%time
-#kelime vektörlerinin elde edilemesi için skip-gram modeli kullanılıyor
-for epoch in range(30):
-    model_sg.train(utils.shuffle([x.words for x in tqdm(all_x_w2v)]), total_examples=len(all_x_w2v), epochs=1)
-    model_sg.alpha -= 0.002
-    model_sg.min_alpha = model_sg.alpha
-"""
-
 #bu iki yöntemi birleştirdik
 embeddings_index = {}
 for w in model_ug_cbow.wv.vocab.keys():
